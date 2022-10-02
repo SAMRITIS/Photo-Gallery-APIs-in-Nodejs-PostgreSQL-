@@ -11,9 +11,6 @@ const { Sequelize } = require("../model");
 const Image = db.image;
 dotenv.config();
 
-// localhost: 3000 / api / v1 / images
-// localhost: 3000 / api / v1 / images ? limit = 2 & pageNo=2 & fileName=03.jpg & startDate=2022 - 10 - 01 & endDate=2022 - 10 - 19
-// localhost: 3000 / images / 03.jpg
 exports.uploadImage = async (req, res, next) => {
     try {
         let form = new formidable.IncomingForm();
